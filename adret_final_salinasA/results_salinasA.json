@@ -1,0 +1,171 @@
+{
+  "dataset": "Salinas A",
+  "seed": 42,
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cpu",
+  "config": {
+    "LR_QUANTUM": 0.0005,
+    "N_QUBITS": 4,
+    "N_REUP_LAYERS": 4,
+    "TOPOLOGY_BETA": 0.05,
+    "N_SUB_ROTATIONS": 3,
+    "PATCH_SIZE": 9,
+    "BATCH_SIZE": 16,
+    "N_EPOCHS": 50,
+    "LR_CLASSICAL": 0.001,
+    "WEIGHT_DECAY": 0.0001,
+    "FOCAL_GAMMA": 2.0,
+    "GRAD_CLIP_NORM": 5.0,
+    "TRAIN_PER_CLASS": 30,
+    "VAL_PER_CLASS": 15,
+    "TEST_PER_CLASS": 50,
+    "DROPOUT": 0.2,
+    "SPATIAL_DIM": 32,
+    "FUSION_DIM": 64,
+    "ROUTER_BOTTLENECK": 32
+  },
+  "param_counts": {
+    "total": 127050,
+    "quantum": 102908,
+    "spatial": 21312,
+    "classifier": 2758,
+    "bn": 72
+  },
+  "gate_counts": {
+    "total_rot_gates": 48,
+    "total_crz_gates": 12,
+    "trainable_thetas": 144
+  },
+  "train_time_s": 659.5450155735016,
+  "best_epoch": 17,
+  "val": {
+    "oa": 1.0,
+    "aa": 1.0,
+    "kappa": 1.0,
+    "per_class_acc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "support": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_precision": 1.0,
+    "weighted_recall": 1.0,
+    "weighted_f1": 1.0
+  },
+  "test": {
+    "oa": 0.99,
+    "aa": 0.9899999999999999,
+    "kappa": 0.988,
+    "per_class_acc": [
+      1.0,
+      0.96,
+      1.0,
+      0.98,
+      1.0,
+      1.0
+    ],
+    "precision": [
+      1.0,
+      1.0,
+      0.9803921568627451,
+      1.0,
+      1.0,
+      0.9615384615384616
+    ],
+    "recall": [
+      1.0,
+      0.96,
+      1.0,
+      0.98,
+      1.0,
+      1.0
+    ],
+    "f1": [
+      1.0,
+      0.9795918367346939,
+      0.9900990099009901,
+      0.98989898989899,
+      1.0,
+      0.9803921568627451
+    ],
+    "support": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "macro_precision": 0.9903217697335345,
+    "macro_recall": 0.9899999999999999,
+    "macro_f1": 0.9899969988995698,
+    "weighted_precision": 0.9903217697335345,
+    "weighted_recall": 0.99,
+    "weighted_f1": 0.9899969988995697
+  },
+  "test_bootstrap_95ci": {
+    "oa_ci": [
+      0.9766666666666667,
+      1.0
+    ],
+    "aa_ci": [
+      0.9767831262939959,
+      1.0
+    ],
+    "kappa_ci": [
+      0.971942313114888,
+      1.0
+    ]
+  },
+  "class_names": [
+    "Brocoli-green-weeds-1",
+    "Corn-senesced-green-weeds",
+    "Lettuce-romaine-4wk",
+    "Lettuce-romaine-5wk",
+    "Lettuce-romaine-6wk",
+    "Lettuce-romaine-7wk"
+  ],
+  "qubit_dominant_region": [
+    "SWIR2",
+    "SWIR2",
+    "SWIR2",
+    "SWIR2"
+  ]
+}

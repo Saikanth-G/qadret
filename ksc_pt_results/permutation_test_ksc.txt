@@ -1,0 +1,8 @@
+Permutation test for eta^2 - ksc
+N_perm = 1000
+Observed eta^2 = 0.893950
+Null mean +- std = 0.018381 +- 0.006836
+Null max = 0.051179
+z-score = 128.072922
+p-value = 0.000999
+Verdict: HIGHLY significant (p < 0.001) — include in paper

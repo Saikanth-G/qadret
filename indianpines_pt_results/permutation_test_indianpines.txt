@@ -1,0 +1,8 @@
+Permutation test for eta^2 - indianpines
+N_perm = 1000
+Observed eta^2 = 0.765963
+Null mean +- std = 0.032970 +- 0.015177
+Null max = 0.113327
+z-score = 48.295692
+p-value = 0.000999
+Verdict: HIGHLY significant (p < 0.001) — include in paper
